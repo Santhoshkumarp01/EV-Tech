@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    background-color: #0A0A0A;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Video Section */
+.video-section {
+    flex: 1;
+    text-align: center;
+}
+
+.video-feed {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid cyan;
+}
+
+/* Speedometer Section */
+.speedometer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Speed Display */
+.speed-display {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0));
+    border-radius: 50%;
+    border: 5px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.speed-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speed-value {
+    font-size: 50px;
+    font-weight: bold;
+    color: cyan;
+}
+
+.speed-unit {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Alert Button */
+.alert-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: cyan;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert-btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px cyan;
+}

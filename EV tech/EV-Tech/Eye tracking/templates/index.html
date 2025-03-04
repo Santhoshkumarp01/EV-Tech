@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Detection System</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Live Video Stream -->
+        <div class="video-section">
+            <h2>Live Feed</h2>
+            <img src="http://127.0.0.1:5000/video_feed" alt="Video Stream" class="video-feed">
+        </div>
+
+        <!-- Right Side: Speedometer UI -->
+        <div class="speedometer">
+            <h2>Speedometer</h2>
+            <div class="speed-display">
+                <div class="speed-circle">
+                    <p class="speed-value">125</p>
+                    <p class="speed-unit">km/h</p>
+                </div>
+            </div>
+            <button class="alert-btn" onclick="fetch('http://127.0.0.1:5000/start_alert')">Start Alert</button>
+        </div>
+    </div>
+</body>
+</html>
